@@ -2,6 +2,7 @@
 /output/
 /target/
 /tmp/
+/press/results/raw/
 **/target/
 __pycache__/
 *.py[cod]
