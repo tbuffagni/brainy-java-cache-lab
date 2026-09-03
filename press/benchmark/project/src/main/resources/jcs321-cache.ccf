@@ -1,0 +1,7 @@
+jcs.default=
+jcs.default.cacheattributes=org.apache.commons.jcs3.engine.CompositeCacheAttributes
+jcs.default.cacheattributes.MaxObjects=10000
+jcs.default.cacheattributes.MemoryCacheName=org.apache.commons.jcs3.engine.memory.lru.LRUMemoryCache
+jcs.default.elementattributes=org.apache.commons.jcs3.engine.ElementAttributes
+jcs.default.elementattributes.IsEternal=false
+jcs.default.elementattributes.MaxLife=300

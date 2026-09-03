@@ -1,0 +1,3 @@
+[submodule "vendor/commons-jcs4-main"]
+	path = vendor/commons-jcs4-main
+	url = https://github.com/apache/commons-jcs.git

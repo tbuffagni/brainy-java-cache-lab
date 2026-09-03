@@ -1,0 +1,24 @@
+Copyright (c) 2026 Thomas Buffagni.
+
+This distribution uses separate licenses according to the type of material:
+
+- Benchmark source code, orchestration scripts, validation scripts, Docker
+  configuration, and software examples are licensed under the Apache License,
+  Version 2.0 (SPDX: Apache-2.0).
+- The Italian and English papers, the frozen experimental protocol,
+  documentation, tables, and figures are licensed under the Creative Commons
+  Attribution 4.0 International license (SPDX: CC-BY-4.0).
+- Original benchmark datasets, CSV files, JSON results, workbooks, and
+  diagnostic evidence produced for this study are licensed under the Creative
+  Commons Attribution 4.0 International license (SPDX: CC-BY-4.0).
+
+Apache License 2.0: https://www.apache.org/licenses/LICENSE-2.0
+CC BY 4.0 legal code: https://creativecommons.org/licenses/by/4.0/legalcode
+
+Attribution for the paper and data:
+Thomas Buffagni, "Beyond Throughput: A Reproducible Benchmark of Java Caches
+in a Tomcat Lifecycle", version 1.0.0, 2026.
+
+Third-party components, project names, dependencies, fonts, documentation,
+and source snapshots remain subject to their respective licenses. See
+THIRD_PARTY_NOTICES.md. No trademark rights are granted.

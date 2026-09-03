@@ -1,0 +1,22 @@
+* text=auto
+
+# Preserve reproducible checksums on every platform.
+*.ccf text eol=lf
+*.csv text eol=lf
+*.java text eol=lf
+*.json text eol=lf
+*.md text eol=lf
+*.properties text eol=lf
+*.ps1 text eol=lf
+*.py text eol=lf
+*.svg text eol=lf
+*.txt text eol=lf
+*.xml text eol=lf
+*.yml text eol=lf
+SHA256SUMS text eol=lf
+VERSION text eol=lf
+
+*.pdf binary
+*.woff2 binary
+*.xlsx binary
+*.zip binary

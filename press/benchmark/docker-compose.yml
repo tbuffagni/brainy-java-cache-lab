@@ -1,0 +1,33 @@
+name: testcache
+
+services:
+  tomcat:
+    # A stable tag lets the Python runner use
+    # `up -d --no-build --force-recreate` before every independent JVM fork.
+    image: ${CACHE_BENCH_IMAGE:-testcache-benchmark:v4}
+    build:
+      context: ../..
+      dockerfile: ${CACHE_BENCH_DOCKERFILE:-press/benchmark/Dockerfile}
+      args:
+        BUILD_IMAGE: ${CACHE_BENCH_BUILD_IMAGE:-maven:3.9.11-eclipse-temurin-25@sha256:407c4423cec0cf2981055bc2c6c0dc211d9605b6669279b95997f2d1c7e91e2c}
+        RUNTIME_IMAGE: ${CACHE_BENCH_TOMCAT_IMAGE:-tomcat:11.0.24-jdk25-temurin-noble@sha256:6d673ad42da6498f05755cae67f85f2128bdfd88943c9bdb22e0965f8d4c3182}
+        JCS4_COMMIT: ${CACHE_BENCH_JCS4_COMMIT:-unknown}
+        JCS4_VERSION: ${CACHE_BENCH_JCS4_VERSION:-4.0.0-SNAPSHOT}
+        JCS4_COORDINATES: ${CACHE_BENCH_JCS4_COORDINATES:-org.apache.commons:commons-jcs4-core:4.0.0-SNAPSHOT}
+        JCS321_VERSION: ${CACHE_BENCH_JCS321_VERSION:-3.2.1}
+        JCS321_COORDINATES: ${CACHE_BENCH_JCS321_COORDINATES:-org.apache.commons:commons-jcs3-core:3.2.1}
+        JCS321_SHA256: ${CACHE_BENCH_JCS321_SHA256:-12c6fe08223820089f60969b6088e6ac5d358aa872de78357585cdacb6c61049}
+    container_name: cache-benchmark-tomcat
+    ports:
+      - "127.0.0.1:18080:8080"
+    cpus: ${CACHE_BENCH_DOCKER_CPUS:-4.0}
+    mem_limit: ${CACHE_BENCH_DOCKER_MEMORY:-1536m}
+    environment:
+      JAVA_OPTS: ${CACHE_BENCH_JAVA_OPTS:--Xms256m -Xmx768m -XX:+UseG1GC -XX:NativeMemoryTracking=summary -Djava.awt.headless=true}
+      CACHE_BENCH_JCS4_VERSION: ${CACHE_BENCH_JCS4_VERSION:-4.0.0-SNAPSHOT}
+      CACHE_BENCH_JCS4_COMMIT: ${CACHE_BENCH_JCS4_COMMIT:-unknown}
+      CACHE_BENCH_JCS4_COORDINATES: ${CACHE_BENCH_JCS4_COORDINATES:-org.apache.commons:commons-jcs4-core:4.0.0-SNAPSHOT}
+      CACHE_BENCH_JCS321_VERSION: ${CACHE_BENCH_JCS321_VERSION:-3.2.1}
+      CACHE_BENCH_JCS321_COORDINATES: ${CACHE_BENCH_JCS321_COORDINATES:-org.apache.commons:commons-jcs3-core:3.2.1}
+      CACHE_BENCH_JCS321_SHA256: ${CACHE_BENCH_JCS321_SHA256:-12c6fe08223820089f60969b6088e6ac5d358aa872de78357585cdacb6c61049}
+    restart: "no"

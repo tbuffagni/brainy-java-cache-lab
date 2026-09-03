@@ -1,0 +1,30 @@
+cff-version: 1.2.0
+message: "If you use this benchmark, paper, or dataset, please cite this work."
+title: "Beyond Throughput: A Reproducible Benchmark of Java Caches in a Tomcat Lifecycle"
+type: software
+authors:
+  - family-names: Buffagni
+    given-names: Thomas
+    website: "https://www.linkedin.com/in/thomasbuffagni/"
+version: 1.0.0
+date-released: 2026-09-03
+license: Apache-2.0
+keywords:
+  - Java caching systems
+  - local in-memory caches
+  - reproducible benchmarking
+  - software performance engineering
+  - Apache Tomcat
+  - JVM lifecycle
+  - web application redeployment
+  - memory leak detection
+preferred-citation:
+  type: article
+  title: "Beyond Throughput: A Reproducible Benchmark of Java Caches in a Tomcat Lifecycle"
+  authors:
+    - family-names: Buffagni
+      given-names: Thomas
+      website: "https://www.linkedin.com/in/thomasbuffagni/"
+  year: 2026
+  version: 1.0.0
+  license: CC-BY-4.0
