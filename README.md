@@ -32,7 +32,7 @@ Requirements: Docker Desktop configured for Linux containers, Docker Compose, Gi
 Clone the repository together with the pinned Apache Commons JCS source revision:
 
 ```powershell
-git clone --recurse-submodules <repository-url>
+git clone --recurse-submodules https://github.com/tbuffagni/brainy-java-cache-lab.git
 cd brainy-java-cache-lab
 ```
 
