@@ -1,6 +1,6 @@
 # Published results
 
-This directory contains the tabular results used by version 1.0.0 of *Beyond Throughput: A Reproducible Benchmark of Java Caches in a Tomcat Lifecycle*.
+This directory contains the tabular results used by version 1.0.1 of *Beyond Throughput: A Reproducible Benchmark of Java Caches in a Tomcat Lifecycle*.
 
 The publication dataset is identified by:
 

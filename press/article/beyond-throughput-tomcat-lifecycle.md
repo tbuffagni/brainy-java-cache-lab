@@ -6,7 +6,7 @@ Thomas Buffagni
 
 LinkedIn: <https://www.linkedin.com/in/thomasbuffagni/>
 
-Versione 1.0.0 — 3 settembre 2026  
+Versione 1.0.1 — 4 settembre 2026  
 Licenza: Creative Commons Attribuzione 4.0 Internazionale (CC BY 4.0)
 
 **Parole chiave:** sistemi di caching Java, cache locali in memoria, benchmarking riproducibile, ingegneria delle prestazioni software, Apache Tomcat, lifecycle della JVM, redeploy di applicazioni web, rilevazione dei memory leak.

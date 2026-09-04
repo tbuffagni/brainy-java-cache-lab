@@ -6,8 +6,8 @@ authors:
   - family-names: Buffagni
     given-names: Thomas
     website: "https://www.linkedin.com/in/thomasbuffagni/"
-version: 1.0.0
-date-released: 2026-09-03
+version: 1.0.1
+date-released: 2026-09-04
 license: Apache-2.0
 keywords:
   - Java caching systems
@@ -26,5 +26,5 @@ preferred-citation:
       given-names: Thomas
       website: "https://www.linkedin.com/in/thomasbuffagni/"
   year: 2026
-  version: 1.0.0
+  version: 1.0.1
   license: CC-BY-4.0

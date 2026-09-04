@@ -17,7 +17,7 @@ CC BY 4.0 legal code: https://creativecommons.org/licenses/by/4.0/legalcode
 
 Attribution for the paper and data:
 Thomas Buffagni, "Beyond Throughput: A Reproducible Benchmark of Java Caches
-in a Tomcat Lifecycle", version 1.0.0, 2026.
+in a Tomcat Lifecycle", version 1.0.1, 2026.
 
 Third-party components, project names, dependencies, fonts, documentation,
 and source snapshots remain subject to their respective licenses. See
