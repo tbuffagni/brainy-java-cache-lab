@@ -1,0 +1,41 @@
+name: Methodology or result issue
+description: Identify a specific problem in the protocol, analysis, or published claims.
+title: "[Methodology]: "
+labels:
+  - methodology
+body:
+  - type: textarea
+    id: claim
+    attributes:
+      label: Affected method or claim
+      description: Quote or link to the exact section, table, figure, or code path.
+    validations:
+      required: true
+  - type: textarea
+    id: concern
+    attributes:
+      label: Concern
+      description: Explain the possible bias, error, ambiguity, or unsupported inference.
+    validations:
+      required: true
+  - type: textarea
+    id: evidence
+    attributes:
+      label: Evidence or reasoning
+      description: Provide calculations, references, code, or observations that allow the concern to be evaluated.
+    validations:
+      required: true
+  - type: textarea
+    id: correction
+    attributes:
+      label: Suggested correction or test
+      description: Describe how the issue could be resolved or falsified.
+  - type: checkboxes
+    id: checks
+    attributes:
+      label: Submission checks
+      options:
+        - label: I searched existing issues and discussions for the same concern.
+          required: true
+        - label: This report concerns a specific defect; open-ended questions belong in Discussions.
+          required: true

@@ -23,7 +23,7 @@ The canonical campaign completed 36 independent JVM processes, 180 Tomcat lifecy
 | Ehcache | 24.813 Mops/s | 24.626 Mops/s |
 | JCS 4 snapshot | 0.965 Mops/s | 0.969 Mops/s |
 
-The JCS lifecycle test is treated separately from the performance comparison. The worker-thread retention observed with JCS 3.2.1 was reproduced in 6/6 JVM processes and was not reproduced in 0/6 processes running the pinned JCS 4 revision. This result is specific to the tested failure pattern and does not claim the absence of every possible form of resource retention.
+The JCS lifecycle test is treated separately from the performance comparison. The worker-thread retention observed with JCS 3.2.1 was reproduced in 6/6 JVM processes and in 0/6 processes running the pinned JCS 4 revision. This result is specific to the tested failure pattern and does not claim the absence of every possible form of resource retention.
 
 ## Reproduce the benchmark
 
@@ -84,3 +84,10 @@ Detailed instructions are in the [press kit](press/README.md) and [benchmark gui
 Citation metadata is provided in [`CITATION.cff`](CITATION.cff). Software is licensed under Apache-2.0; the papers, protocol, original figures, documentation, and original data are licensed under CC BY 4.0. Third-party notices are listed in [`THIRD_PARTY_NOTICES.md`](THIRD_PARTY_NOTICES.md).
 
 Thomas Buffagni — [LinkedIn](https://www.linkedin.com/in/thomasbuffagni/)
+
+## Community
+
+- Use [Discussions](https://github.com/tbuffagni/brainy-java-cache-lab/discussions) for questions, methodology, independent reproductions, and ideas for future experiments.
+- Use [Issues](https://github.com/tbuffagni/brainy-java-cache-lab/issues) for reproducible defects or specific problems in the published material.
+- Read [CONTRIBUTING.md](CONTRIBUTING.md) before proposing a change.
+- Report security concerns according to [SECURITY.md](SECURITY.md), not in a public issue.

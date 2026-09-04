@@ -1,0 +1,8 @@
+blank_issues_enabled: false
+contact_links:
+  - name: Questions and open discussion
+    url: https://github.com/tbuffagni/brainy-java-cache-lab/discussions
+    about: Ask questions, discuss methods, or propose future experiments.
+  - name: Private security report
+    url: https://github.com/tbuffagni/brainy-java-cache-lab/security/advisories/new
+    about: Report a vulnerability privately instead of opening a public issue.

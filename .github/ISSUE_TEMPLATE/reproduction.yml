@@ -1,0 +1,71 @@
+name: Reproduction report
+description: Report an independent run or a reproducibility problem.
+title: "[Reproduction]: "
+labels:
+  - reproduction
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Thank you for testing the benchmark. Do not attach confidential or production data.
+  - type: input
+    id: revision
+    attributes:
+      label: Release and commit
+      description: Identify the tag or release and the full commit SHA that you tested.
+      placeholder: v1.0.0, commit cc22637...
+    validations:
+      required: true
+  - type: textarea
+    id: environment
+    attributes:
+      label: Environment
+      description: Include OS, kernel, CPU, memory, Docker, JVM, Maven, Python, and Tomcat versions.
+    validations:
+      required: true
+  - type: textarea
+    id: command
+    attributes:
+      label: Exact command and parameters
+      render: shell
+    validations:
+      required: true
+  - type: dropdown
+    id: protocol
+    attributes:
+      label: Experiment type
+      options:
+        - Canonical v4.2 protocol
+        - Smoke or diagnostic run
+        - Modified experiment
+    validations:
+      required: true
+  - type: textarea
+    id: observed
+    attributes:
+      label: Observed result
+      description: Explain what happened and include the validator result.
+    validations:
+      required: true
+  - type: textarea
+    id: expected
+    attributes:
+      label: Expected result
+    validations:
+      required: true
+  - type: textarea
+    id: evidence
+    attributes:
+      label: Supporting evidence
+      description: Link to logs or artifacts. Remove secrets, personal data, and unrelated system information first.
+  - type: checkboxes
+    id: checks
+    attributes:
+      label: Submission checks
+      options:
+        - label: I did not combine a modified run with the canonical dataset.
+          required: true
+        - label: I removed secrets and confidential data from the evidence.
+          required: true
+        - label: I searched existing issues and discussions for the same result.
+          required: true
