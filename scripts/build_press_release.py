@@ -10,9 +10,9 @@ import zipfile
 from pathlib import Path
 
 
-VERSION = "1.0.0"
+VERSION = "1.0.1"
 CAMPAIGN = "article1-unified-v4-2-fb3f101b-20260903-000401"
-ZIP_TIME = (2026, 9, 3, 0, 0, 0)
+ZIP_TIME = (2026, 9, 4, 0, 0, 0)
 
 
 def files_under(root: Path) -> list[Path]:

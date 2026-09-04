@@ -32,12 +32,12 @@ La campagna ha completato 36/36 JVM, 180/180 cicli e 360/360 finestre. Il valida
 
 ## Release pubblica
 
-La distribuzione `1.0.0` è costruita in due archivi: il press kit principale e l'archivio completo delle evidenze. Dopo avere generato il PDF, gli archivi si producono con:
+La distribuzione `1.0.1` è costruita in due archivi: il press kit principale e l'archivio completo delle evidenze. Dopo avere generato il PDF, gli archivi si producono con:
 
 ```powershell
 python .\scripts\build_press_release.py `
-  --pdf .\output\pdf\beyond-throughput-tomcat-lifecycle-1.0.0.pdf `
-  --pdf-en .\output\pdf\beyond-throughput-tomcat-lifecycle-en-1.0.0.pdf
+  --pdf .\output\pdf\beyond-throughput-tomcat-lifecycle-1.0.1.pdf `
+  --pdf-en .\output\pdf\beyond-throughput-tomcat-lifecycle-en-1.0.1.pdf
 ```
 
 I file `VERSION`, `RELEASE_NOTES.md`, `LICENSE` e `THIRD_PARTY_NOTICES.md` definiscono identità e condizioni della distribuzione. Il codice è distribuito con licenza Apache-2.0; paper, protocollo, documentazione, figure e dati originali con licenza CC BY 4.0. I materiali interni sono esclusi automaticamente.

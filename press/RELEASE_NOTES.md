@@ -1,8 +1,17 @@
-# Beyond Throughput Press Kit 1.0.0
+# Beyond Throughput Press Kit 1.0.1
 
-Data di rilascio: 3 settembre 2026.
+Data di rilascio: 4 settembre 2026.
 
-Prima distribuzione riproducibile dello studio *Beyond Throughput: A Reproducible Benchmark of Java Caches in a Tomcat Lifecycle*.
+Release correttiva della prima distribuzione riproducibile dello studio *Beyond Throughput: A Reproducible Benchmark of Java Caches in a Tomcat Lifecycle*.
+
+## Correzioni rispetto alla 1.0.0
+
+- corretti quattro checksum che dipendevano dalla conversione CRLF/LF del checkout Git;
+- allineati versione, data, metadati bibliografici, paper e archivi alla release 1.0.1;
+- aggiunti controlli automatici multipiattaforma per test, build e provenienza;
+- aggiunti i file e i template necessari alla collaborazione e alla segnalazione responsabile di vulnerabilità.
+
+I dati della campagna, il protocollo v4.2, i risultati numerici e le conclusioni scientifiche non cambiano.
 
 ## Contenuto principale
 
